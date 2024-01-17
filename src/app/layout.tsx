@@ -1,9 +1,14 @@
 import './globals.css';
 
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { M_PLUS_Rounded_1c } from 'next/font/google';
 
-const inter = Inter({ subsets: ['latin'] });
+const baseFont = M_PLUS_Rounded_1c({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '700'],
+  preload: true,
+  fallback: ['sans-serif'],
+});
 
 export const metadata: Metadata = {
   title: 'Bruno Santos | Portfolio',
@@ -12,8 +17,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="pt-BR">
+      <body className={baseFont.className}>{children}</body>
     </html>
   );
 }
