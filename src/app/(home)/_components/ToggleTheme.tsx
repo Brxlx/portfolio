@@ -15,7 +15,7 @@ export function ToggleTheme() {
   return isMounted ? (
     <div className="inline-flex items-center rounded-3xl bg-orange-100 p-1 dark:bg-zinc-600">
       {themes
-        .filter(t => t !== 'system')
+        .filter(t => t !== 'system') // because useTheme includes 'system' value into the array.
         .map(t => {
           const checked = t === resolvedTheme;
           return (
