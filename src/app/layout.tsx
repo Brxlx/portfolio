@@ -1,12 +1,15 @@
 import './globals.css';
 
 import type { Metadata } from 'next';
-import { M_PLUS_Rounded_1c } from 'next/font/google';
+import { Open_Sans } from 'next/font/google';
 
-const baseFont = M_PLUS_Rounded_1c({
+import { cn } from '@/lib/utils';
+
+import { ThemeProvider } from './(home)/_components/ThemeProvider';
+
+const baseFont = Open_Sans({
   subsets: ['latin'],
   weight: ['300', '400', '500', '700'],
-  preload: true,
   fallback: ['sans-serif'],
 });
 
@@ -17,8 +20,17 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="pt-BR">
-      <body className={baseFont.className}>{children}</body>
+    <html lang="pt-BR" suppressHydrationWarning>
+      <body
+        className={cn(
+          baseFont.className,
+          'duration-3000 break-words bg-orange-50 p-5 text-zinc-900 transition-all duration-700 dark:bg-zinc-900 dark:text-zinc-300'
+        )}
+      >
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   );
 }
