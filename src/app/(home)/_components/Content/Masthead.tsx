@@ -3,7 +3,8 @@ export function Masthead() {
     <section className="relative mb-6 flex h-80 items-center justify-center">
       <div className="absolute h-full w-screen overflow-hidden">
         <video
-          className="absolute left-1/2 top-1/2 h-auto min-h-full min-w-full -translate-x-1/2 -translate-y-1/2 object-cover opacity-85 blur-sm dark:opacity-30"
+          className="absolute left-1/2 top-1/2 h-auto min-h-full min-w-full -translate-x-1/2 -translate-y-1/2
+            object-cover opacity-85 dark:opacity-30"
           autoPlay
           muted
           loop

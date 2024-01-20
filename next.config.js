@@ -9,7 +9,12 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   images: {
-    remotePatterns: [],
+    remotePatterns: [
+      {
+        hostname: 'source.unsplash.com',
+        protocol: 'https',
+      },
+    ],
   },
 };
 
