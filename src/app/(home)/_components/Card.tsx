@@ -1,15 +1,21 @@
 import Image from 'next/image';
 
-export function Card() {
+interface CardProps {
+  id: string;
+  title: string;
+  content: JSX.Element;
+}
+
+export function Card({ id, title, content }: CardProps) {
   return (
-    <div className="sticky top-0 flex h-screen w-full items-end justify-center text-white">
-      <div className="mb-[calc(5vh-3%)] flex flex-col gap-6 p-4">
-        <h1 className="text-3xl drop-shadow-md">Título interessante</h1>
-        <p className="leading-7">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, sapiente quibusdam.
-          Nobis possimus, exercitationem sapiente ea eum pariatur consectetur veniam dolor tenetur
-          ducimus accusamus odio fuga. Omnis ipsam consequuntur nesciunt!
-        </p>
+    <div
+      id={id}
+      key={id}
+      className="sticky top-0 flex h-screen w-full items-end justify-center text-white"
+    >
+      <div className="mb-[calc(5vh+3%)] flex flex-col gap-6 p-4">
+        <h1 className="text-3xl drop-shadow-md">{title}</h1>
+        <div className="leading-7">{content}</div>
         <Image
           src="https://source.unsplash.com/random/1000x1000"
           alt=""
