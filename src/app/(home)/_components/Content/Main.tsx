@@ -21,11 +21,11 @@ export function Main() {
         className="mx-auto my-6 h-48 w-48 border-4 border-orange-300 dark:border-zinc-100"
         aria-label="Avatar"
       >
-        <AvatarImage src="https://github.com/Brxlx.png" alt="@Brxlx" />
+        <AvatarImage src="/self.jpg" alt="@Brxlx" />
         <AvatarFallback>Bruno Santos</AvatarFallback>
       </Avatar>
       {/* Avatar */}
-      <div className="flex flex-col gap-6">
+      <div className="flex flex-col gap-6 px-2">
         <h2 className="text-center">
           Sou um <span className="font-bold text-red-500">Full-Stack Developer</span> com mais de{' '}
           <span className="font-bold text-red-500">4 anos</span> de experiência no mercado de
