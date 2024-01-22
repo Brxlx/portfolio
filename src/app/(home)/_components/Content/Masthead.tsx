@@ -1,7 +1,7 @@
 export function Masthead() {
   return (
     <section className="relative mb-6 flex h-80 items-center justify-center">
-      <div className="absolute h-full w-screen overflow-hidden">
+      <div className="absolute h-full w-full overflow-hidden">
         <video
           className="absolute left-1/2 top-1/2 h-auto min-h-full min-w-full -translate-x-1/2 -translate-y-1/2
             object-cover opacity-85 dark:opacity-30"

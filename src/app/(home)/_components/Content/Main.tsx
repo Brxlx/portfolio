@@ -12,13 +12,13 @@ import { Section } from './Section';
 
 export function Main() {
   return (
-    <main className="w-full p-2 pt-24">
+    <main className="w-full pt-24">
       <h1 className="mb-12 text-center text-3xl font-bold">
         Quem sou <span className="text-red-500">eu</span>.
       </h1>
       {/* Avatar */}
       <Avatar
-        className="mx-auto my-6 h-36 w-36 border-4 border-orange-300 dark:border-zinc-100"
+        className="mx-auto my-6 h-48 w-48 border-4 border-orange-300 dark:border-zinc-100"
         aria-label="Avatar"
       >
         <AvatarImage src="https://github.com/Brxlx.png" alt="@Brxlx" />
