@@ -1,16 +1,14 @@
-import { useId } from 'react';
-import { FaDocker } from 'react-icons/fa';
 import { IoArrowForward } from 'react-icons/io5';
-import { SiKubernetes } from 'react-icons/si';
 
-import { Card } from '../Card';
 import { Masthead } from './Masthead';
+import { Portfolio } from './Portflio';
 
 export function Main() {
   return (
     <main className="w-full pt-24">
       <Masthead />
-      <Card
+      <Portfolio />
+      {/* <Card
         id={useId()}
         title="Main Stack"
         content={
@@ -51,7 +49,7 @@ export function Main() {
             <SiKubernetes className="h-10 w-10 text-blue-500" />
           </h2>
         }
-      />
+      /> */}
       <a className="inline-flex items-center gap-1 indent-1 text-red-500 hover:underline" href="#">
         Saiba mais sobre mim <IoArrowForward />
       </a>

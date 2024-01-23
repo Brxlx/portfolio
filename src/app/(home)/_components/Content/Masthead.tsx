@@ -18,12 +18,13 @@ export function Masthead() {
       <div className="z-10 px-8 text-center shadow-black drop-shadow-lg">
         <div className="w-full">
           <h1 className="mx-auto mb-12 text-center text-3xl font-bold text-orange-50">
-            Quem sou <span className="text-red-500">eu</span>.
+            Quem sou <span className="text-red-500">eu</span> .
           </h1>
           {/* Avatar */}
           <Avatar
-            className="mx-auto my-6 h-48 w-48 border-4 border-zinc-100 transition-transform hover:scale-105"
             aria-label="Avatar"
+            className="mx-auto my-6 h-48 w-48 border-4 border-zinc-100 transition-transform hover:scale-105"
+            style={{}}
           >
             <AvatarImage src="https://github.com/Brxlx.png" alt="@Brxlx" />
             <AvatarFallback>Bruno Santos</AvatarFallback>
@@ -38,8 +39,8 @@ export function Masthead() {
           </h2>
           <h2 className="text-center leading-8 text-orange-50">
             Utilizando as <span className="font-bold text-sky-500">tecnologias</span> mais{' '}
-            <span className="font-bold">recentes</span> e as melhores práticas, preparado para as
-            rigorosas demandas do mercado atual.
+            <span className="font-bold text-green-500">recentes</span> e as melhores práticas,
+            alinhado com as demandas do mercado atual.
           </h2>
         </div>
       </div>
