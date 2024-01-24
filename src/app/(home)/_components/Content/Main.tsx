@@ -7,7 +7,14 @@ export function Main() {
   return (
     <main className="w-full pt-24">
       <Masthead />
-      <Portfolio />
+      <section className="my-10 flex flex-col items-center justify-center gap-6">
+        <h1 className="mx-auto text-center text-3xl font-bold dark:text-orange-50">Portfolio .</h1>
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+          <Portfolio />
+          <Portfolio />
+          <Portfolio />
+        </div>
+      </section>
       {/* <Card
         id={useId()}
         title="Main Stack"
