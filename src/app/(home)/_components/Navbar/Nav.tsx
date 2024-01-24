@@ -6,9 +6,13 @@ import { ToggleTheme } from '../ToggleTheme';
 export function Nav() {
   return (
     <nav className="flex items-center justify-between gap-3 text-base">
-      <h2 className="break-before-all p-2 text-lg font-semibold tracking-tighter">Bruno Santos</h2>
+      <a href="/">
+        <h2 className="break-before-all p-2 text-lg font-semibold tracking-tighter">
+          Bruno Santos
+        </h2>
+      </a>
       <div className="flex items-center gap-6">
-        <Link href="/tecs" className="hover:underline active:underline">
+        <Link href="/techs" className="hover:underline active:underline">
           Tecnologias
         </Link>
         <Link
