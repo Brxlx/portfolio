@@ -1,3 +1,6 @@
+import { BsDiscord } from 'react-icons/bs';
+import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5';
+
 export const techs = [
   {
     header: 'Main Stack',
@@ -117,5 +120,29 @@ export const techs = [
         kind: 'Cloud',
       },
     ],
+  },
+];
+
+export const contact = [
+  {
+    title: 'LinkedIn',
+    link: 'https://www.linkedin.com/in/bruno-santos-a14b72196/',
+    icon: IoLogoLinkedin,
+    colorWhite: '#0370AD',
+    colorDark: '#0370AD',
+  },
+  {
+    title: 'Github',
+    link: 'https://github.com/Brxlx?tab=repositories',
+    icon: IoLogoGithub,
+    colorWhite: '#1A1E22',
+    colorDark: 'white',
+  },
+  {
+    title: 'Discord',
+    link: 'https://discord.gg/szRAmgsg',
+    icon: BsDiscord,
+    colorWhite: '#4D62EE',
+    colorDark: '#4D62EE',
   },
 ];

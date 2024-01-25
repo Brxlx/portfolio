@@ -1,4 +1,4 @@
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { MainAvatar } from './MainAvatar';
 
 export function Masthead() {
   return (
@@ -20,16 +20,7 @@ export function Masthead() {
           <h1 className="mx-auto mb-12 text-center text-3xl font-bold text-orange-50">
             Quem sou <span className="text-red-500">eu</span> .
           </h1>
-          {/* Avatar */}
-          <Avatar
-            aria-label="Avatar"
-            className="mx-auto my-6 h-48 w-48 border-4 border-zinc-100 transition-transform hover:scale-105"
-            style={{}}
-          >
-            <AvatarImage src="https://github.com/Brxlx.png" alt="@Brxlx" />
-            <AvatarFallback>Bruno Santos</AvatarFallback>
-          </Avatar>
-          {/* Avatar */}
+          <MainAvatar />
         </div>
         <div className="flex flex-col gap-6 px-2">
           <h2 className="text-center leading-8 text-orange-50">

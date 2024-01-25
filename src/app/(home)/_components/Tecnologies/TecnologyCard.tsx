@@ -20,7 +20,7 @@ export function TecnologyCard({ imgPath, name, kind, alt, accentColor, content }
         className="aspect-square h-24 w-24 bg-cover"
       />
       <div className="flex flex-col gap-3 break-words">
-        <span className="my-2 font-sans text-sm font-bold" style={{ color: accentColor }}>
+        <span className="my-2 font-sans text-xs font-bold" style={{ color: accentColor }}>
           {kind}
         </span>
         <h3 className="text-xl font-semibold">{name}</h3>

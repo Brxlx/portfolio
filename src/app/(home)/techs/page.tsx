@@ -10,7 +10,6 @@ export default function TechsPage() {
     <>
       <Header />
       <Techs />
-      {/* <Tecnologies header="Main Stack" /> */}
       {techs.map((tech, i) => (
         <Tecnologies key={i} header={tech.header} techs={tech.techs} />
       ))}
