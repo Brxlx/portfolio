@@ -1,3 +1,5 @@
+import { techs } from '@/consts';
+
 import { Techs } from '../_components/Content/Techs';
 import { Footer } from '../_components/Footer';
 import { Header } from '../_components/Header';
@@ -8,10 +10,10 @@ export default function TechsPage() {
     <>
       <Header />
       <Techs />
-      <Tecnologies header="Main Stack" />
-      <Tecnologies header="Studying" />
-      <Tecnologies header="Infra" />
-      <Tecnologies header="Cloud" />
+      {/* <Tecnologies header="Main Stack" /> */}
+      {techs.map((tech, i) => (
+        <Tecnologies key={i} header={tech.header} techs={tech.techs} />
+      ))}
       <Footer />
     </>
   );

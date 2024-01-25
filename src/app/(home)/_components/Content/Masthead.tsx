@@ -38,9 +38,9 @@ export function Masthead() {
             trabalho.
           </h2>
           <h2 className="text-center leading-8 text-orange-50">
-            Utilizando as <span className="font-bold text-sky-500">tecnologias</span> mais{' '}
+            Utilizo as <span className="font-bold text-sky-500">tecnologias</span> mais{' '}
             <span className="font-bold text-green-500">recentes</span> e as melhores práticas,
-            alinhado com as demandas do mercado atual.
+            estando totalmente alinhado com as demandas do mercado atual.
           </h2>
         </div>
       </div>

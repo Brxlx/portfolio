@@ -1,5 +1,3 @@
-import { IoArrowForward } from 'react-icons/io5';
-
 import img from '@/../public/portfolio.jpg';
 
 import { Masthead } from './Masthead';
@@ -35,9 +33,6 @@ export function Main() {
           />
         </div>
       </section>
-      <a className="inline-flex items-center gap-1 indent-1 text-red-500 hover:underline" href="#">
-        Saiba mais sobre mim <IoArrowForward />
-      </a>
     </main>
   );
 }
