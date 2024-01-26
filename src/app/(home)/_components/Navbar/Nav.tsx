@@ -18,7 +18,7 @@ export function Nav() {
   return (
     <nav className="flex items-center justify-between gap-3 text-base">
       <a href="/">
-        <h2 className="break-before-all p-2 text-lg font-semibold tracking-tighter transition-transform hover:underline">
+        <h2 className="break-before-all p-2 text-lg font-semibold tracking-tighter hover:underline">
           Bruno Santos
         </h2>
       </a>
@@ -26,7 +26,10 @@ export function Nav() {
         <div className="md:hidden">
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <Button variant="outline">
+              <Button
+                variant="outline"
+                className="focus-visible:ring-0 focus-visible:ring-transparent focus-visible:ring-offset-0"
+              >
                 <Menu />
               </Button>
             </DropdownMenuTrigger>
@@ -34,13 +37,13 @@ export function Nav() {
               <DropdownMenuLabel>Menu</DropdownMenuLabel>
               <DropdownMenuSeparator />
               <DropdownMenuGroup className="my-4 flex flex-col gap-4">
-                <DropdownMenuItem>
+                <DropdownMenuItem className="outline-none">
                   <Link href="/techs" className="hover:underline active:underline">
                     Tecnologias
                   </Link>
                 </DropdownMenuItem>
                 <DropdownMenuSeparator />
-                <DropdownMenuItem>
+                <DropdownMenuItem className="outline-none">
                   <Link
                     href="https://github.com/Brxlx"
                     target="_blank"
@@ -50,7 +53,7 @@ export function Nav() {
                   </Link>
                 </DropdownMenuItem>
                 <DropdownMenuSeparator />
-                <DropdownMenuItem>
+                <DropdownMenuItem className="outline-none">
                   <Link
                     href="/contact"
                     className="inline-flex items-center gap-1 hover:underline active:underline"

@@ -12,7 +12,7 @@ export function Masthead() {
           loop
           playsInline
         >
-          <source src="/coding-2.mp4" type="video/mp4;"></source>
+          <source src="/coding-3.mp4" type="video/mp4;"></source>
         </video>
       </div>
       <div className="z-10 px-8 text-center shadow-black drop-shadow-lg">

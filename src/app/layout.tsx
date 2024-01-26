@@ -24,7 +24,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body
         className={cn(
           baseFont.className,
-          'break-words bg-orange-50 leading-6 text-zinc-900 transition-all duration-700 dark:bg-zinc-900 dark:text-zinc-300'
+          'break-words bg-orange-50 leading-6 text-zinc-900 transition duration-700  dark:bg-zinc-900 dark:text-zinc-300'
         )}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
