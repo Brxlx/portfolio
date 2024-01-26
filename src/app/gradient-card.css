@@ -1,0 +1,48 @@
+@property --gradient-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+:root {
+  --clr-1: #052b2f;
+  --clr-2: #073438;
+  --clr-3: #0e4b50;
+  --clr-4: #2d8f85;
+  --clr-5: #637c54;
+
+}
+
+.card {
+  height: 15vh;
+  width: 100%;
+  aspect-ratio: 1 / 1.5;
+  background: var(--clr-1);
+  border-radius: 0.5rem;
+  position: relative;
+}
+
+.card:after,
+.card::before {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  inset: -0.25rem;
+  background: conic-gradient(from var(--gradient-angle), var(--clr-3), var(--clr-4), var(--clr-5), var(--clr-4), var(--clr-3));
+  border-radius: inherit;
+  animation: rotation 20s linear infinite;
+}
+
+.card::after {
+  filter: blur(3.5rem);
+}
+
+@keyframes rotation {
+  from {
+    --gradient-angle: 0deg;
+  }
+
+  to {
+    --gradient-angle: 360deg;
+  }
+}
