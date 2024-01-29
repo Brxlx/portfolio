@@ -1,5 +1,3 @@
-import '@/app/gradient-card.css';
-
 import { Masthead } from './Masthead';
 
 export function Main() {
