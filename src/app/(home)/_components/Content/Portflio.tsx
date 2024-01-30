@@ -38,7 +38,7 @@ export function Portfolio({ img, title, content, link }: PortflioProps) {
             <Button
               type="button"
               variant="default"
-              className="w-full bg-[hsl(0_0%_100%)] text-[hsl(240_5.9%_10%)] hover:bg-[hsl(0_0%_90%)]"
+              className="w-full bg-[hsl(0_0%_100%)] !text-[hsl(240_5.9%_10%)] hover:bg-[hsl(0_0%_90%)]"
             >
               Ver Projeto
             </Button>
