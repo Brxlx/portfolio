@@ -16,15 +16,15 @@ export function Main() {
             title="Authr"
             content="Aplicação **full-stack** desenvolvida como um toolkit simples de autenticação com
               suporte a credenciais e via proveadores (*Google, Github, etc*) via OAuth.   
-            **Tecnologias:**  Next.js(React), Node.js, JWT, OAuth Token, Providers.                           
+            **Tecnologias:**  Next.js(React), Node.js, Clerk(Autenticação), JWT, OAuth Token, Providers.                           
             *Work in Progress.*"
             link="https://github.com/Brxlx/authr"
           />
           <Portfolio
             img="/coding-3.jpg"
-            title="Total Dashboard"
+            title="Pizza Shop"
             content="Aplicação full-stack desenvolvida para controle e gerência de ação de usuários, fornecendo dados em real-time, gráficos e comandos gerais para administração.
-            **Tecnologias:** Next.js(React), Node.js, SWR(real-time), NeonDB(Postgres)
+            **Tecnologias:** Next.js(React), Node.js, Autenticação(Magic link), Tanstack Query(real-time and data fetching), NeonDB(Postgres), Real-time charts.
             "
             link="https://github.com/Brxlx/pizza-shop"
           />
