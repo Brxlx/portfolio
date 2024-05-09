@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 import { MainAvatar } from './MainAvatar';
 
 export function Masthead() {
@@ -24,13 +26,22 @@ export function Masthead() {
         </div>
         <div className="flex flex-col gap-6 px-2">
           <h2 className="text-center leading-8 text-orange-50">
-            Sou um <span className="font-bold text-red-500">Full-Stack Developer</span> com mais de{' '}
-            <span className="font-bold text-red-500">4 anos</span> de experiência no mercado de
-            trabalho.
+            Sou um{' '}
+            <span className="font-bold text-red-500">
+              <i>Senior Full-Stack Developer</i>
+            </span>{' '}
+            com mais de <span className="font-bold text-red-500">5 anos</span> de experiência no
+            <span className="font-bold text-green-500"> mercado de trabalho.</span>
           </h2>
           <h2 className="text-center leading-8 text-orange-50">
-            Utilizo as <span className="font-bold text-sky-500">tecnologias</span> mais{' '}
-            <span className="font-bold text-green-500">recentes</span> e as melhores práticas,
+            Utilizo as{' '}
+            <Link href="/techs" className="cursor-pointer">
+              <span className="animate-pulse font-bold text-sky-500 transition-colors duration-300 hover:text-red-500">
+                tecnologias
+              </span>
+            </Link>{' '}
+            mais <span className="font-bold text-green-500">recentes</span> e as{' '}
+            <span className="font-bold text-yellow-500"> melhores práticas, </span>
             estando totalmente alinhado com as demandas do mercado atual.
           </h2>
         </div>

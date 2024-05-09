@@ -10,15 +10,32 @@ export function Main() {
         <p className="max-w-[35ch] text-pretty font-mono font-semibold md:max-w-[70ch]">
           Alguns dos projetos mais interessantes que construí ao longo do tempo.
         </p>
+        {/* TODO: Refactor to put in constants and map the array */}
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
           <Portfolio
+            img="/coding-7.png"
+            title="Forum"
+            content="Aplicação **backend** completa, desenvolvida totalmente sob a *Clean Architerure* e o **framework Nestjs** durante a especialização em Node.js da Rocketseat.  
+            **Tecnologias:**  Node.js, Nestjs(framework), JWT, Bcrypt, Redis.                       
+            *Work in Progress.*"
+            link="https://github.com/Brxlx/ignite-nodejs-server-2023"
+          />
+          <Portfolio
             img="/coding-6.png"
-            title="Authr"
+            title="Authr (WIP)"
             content="Aplicação **full-stack** desenvolvida como um toolkit simples de autenticação com
               suporte a credenciais e via proveadores (*Google, Github, etc*) via OAuth.   
             **Tecnologias:**  Next.js(React), Node.js, Clerk(Autenticação), JWT, OAuth Token, Providers.                           
             *Work in Progress.*"
             link="https://github.com/Brxlx/authr"
+          />
+          <Portfolio
+            img="/coding-8.avif"
+            title="GenyusWizz (WIP)"
+            content="Aplicação full-stack baseada em interação com inteligência artificial de criação de quizes online baseado na entrada do usuário pela tema escolhido
+            **Tecnologias:** Next.js(React), Node.js, Autenticação(Magic link), OpenAI(textos e imagens).
+            *Work in Progress.*"
+            link="https://github.com/Brxlx/pizza-shop"
           />
           <Portfolio
             img="/coding-3.jpg"
@@ -31,7 +48,7 @@ export function Main() {
           <Portfolio
             img="/coding.jpg"
             title="User's API"
-            content="Web api construída com objetivo de prover todo CRUD de usuários em uma plataforma fechada, com diferencial de SSO e divisão de usuários por companhias.
+            content="Web api construída com objetivo de prover todo CRUD de usuários em uma plataforma fechada, com diferencial de SSO, RBAC e divisão de usuários por companhias.
             **Tecnologias**: Node.js, express, JWT, credentials, X-Token, DB PostgresSQL, Cache com Redis.
             "
           />
@@ -39,7 +56,7 @@ export function Main() {
             img="/coding-2.jpg"
             title="SSO Authenticator"
             content="Microsserviço escrito com framework Nest js, parte de um sistema maior de apis e serviços, provendo autenticação customizada
-            a usuários da plataforma.
+            a usuários da plataforma (RBAC).
 
             **Tecnologias:** Node.js, Restfull api, MongoDB, Redis, JWT Token, SSO, company login.
             "

@@ -126,7 +126,7 @@ export const techs = [
 export const contact = [
   {
     title: 'LinkedIn',
-    link: 'https://www.linkedin.com/in/bruno-santos-a14b72196/',
+    link: 'https://www.linkedin.com/in/brunocesantos',
     icon: IoLogoLinkedin,
     colorWhite: '#0370AD',
     colorDark: '#0370AD',
@@ -140,7 +140,7 @@ export const contact = [
   },
   {
     title: 'Discord',
-    link: 'https://discord.gg/szRAmgsg',
+    link: 'https://discord.gg/xq9pbQHG',
     icon: BsDiscord,
     colorWhite: '#4D62EE',
     colorDark: '#4D62EE',
