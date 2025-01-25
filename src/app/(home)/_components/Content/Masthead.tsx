@@ -30,7 +30,7 @@ export function Masthead() {
             <span className="font-bold text-red-500">
               <i>Senior Full-Stack Developer</i>
             </span>{' '}
-            com mais de <span className="font-bold text-red-500">5 anos</span> de experiência no
+            com mais de <span className="font-bold text-red-500">6 anos</span> de experiência no
             <span className="font-bold text-green-500"> mercado de trabalho.</span>
           </h2>
           <h2 className="text-center leading-8 text-orange-50">
