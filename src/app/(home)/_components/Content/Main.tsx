@@ -7,7 +7,7 @@ export function Main() {
       <Masthead />
       <section className="my-10 flex flex-col items-center justify-center gap-6">
         <h1 className="mx-auto text-center text-3xl font-bold dark:text-orange-50">Portfolio .</h1>
-        <p className="max-w-[35ch] text-pretty font-mono font-semibold md:max-w-[70ch]">
+        <p className="max-w-[35ch] font-mono font-semibold text-pretty md:max-w-[70ch]">
           Alguns dos projetos mais interessantes que construí ao longo do tempo.
         </p>
         {/* TODO: Refactor to put in constants and map the array */}

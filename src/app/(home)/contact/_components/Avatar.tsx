@@ -27,7 +27,7 @@ export function ContactAvatar() {
           </Avatar>
           {/* Avatar */}
           <Link href="https://instagram.com/brcesar19" target="_blank" aria-label="Instagram">
-            <div className="my-1 inline-flex -translate-y-2 rounded-2xl border-2 bg-gradient-to-r from-pink-400 to-orange-400 p-2 transition-all duration-300 hover:scale-105">
+            <div className="my-1 inline-flex -translate-y-2 rounded-2xl border-2 bg-linear-to-r from-pink-400 to-orange-400 p-2 transition-all duration-300 hover:scale-105">
               <h2 className="text-sm font-bold text-orange-50">@brcesar19</h2>
             </div>
           </Link>

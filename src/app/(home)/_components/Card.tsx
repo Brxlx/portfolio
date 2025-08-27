@@ -17,7 +17,7 @@ export function Card({ id, title, content }: CardProps) {
           alt=""
           width={1000}
           height={1000}
-          className="absolute left-0 top-0 -z-[1] h-full w-full object-cover brightness-50"
+          className="absolute top-0 left-0 -z-1 h-full w-full object-cover brightness-50"
         />
       </div>
     </div>

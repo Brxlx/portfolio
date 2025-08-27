@@ -4,11 +4,10 @@ import { MainAvatar } from './MainAvatar';
 
 export function Masthead() {
   return (
-    <section className="relative mb-0 flex h-[33rem] items-center justify-center">
+    <section className="relative mb-0 flex h-132 items-center justify-center">
       <div className="absolute h-full w-full overflow-hidden">
         <video
-          className="absolute left-1/2 top-1/2 h-auto min-h-full min-w-full -translate-x-1/2 -translate-y-1/2
-            object-cover opacity-95 dark:opacity-30"
+          className="absolute top-1/2 left-1/2 h-auto min-h-full min-w-full -translate-x-1/2 -translate-y-1/2 object-cover opacity-95 dark:opacity-30"
           autoPlay
           muted
           loop

@@ -1,8 +1,8 @@
 import { DropdownMenu, DropdownMenuItem, DropdownMenuTrigger } from '@radix-ui/react-dropdown-menu';
 import { Menu } from 'lucide-react';
 import Link from 'next/link';
+import { FiFolderMinus } from 'react-icons/fi';
 import { IoLogoGithub } from 'react-icons/io5';
-import { LuFormInput } from 'react-icons/lu';
 
 import { Button } from '@/components/ui/button';
 import {
@@ -58,7 +58,7 @@ export function Nav() {
                     href="/contact"
                     className="inline-flex items-center gap-1 hover:underline active:underline"
                   >
-                    <LuFormInput /> Contato
+                    <FiFolderMinus /> Contato
                   </Link>
                 </DropdownMenuItem>
               </DropdownMenuGroup>
@@ -80,7 +80,7 @@ export function Nav() {
             href="/contact"
             className="inline-flex items-center gap-1 hover:underline active:underline"
           >
-            <LuFormInput /> Contato
+            <FiFolderMinus /> Contato
           </Link>
         </div>
         <ToggleTheme />

@@ -1,19 +1,17 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
 
-html,
-body,
-:root {
-  height: 100%;
-}
-
-html body {
-
-  overflow-y: auto !important;
-  margin-right: 0 !important;
-  
+@layer utilities {
+  html,
+  body,
+  :root {
+    height: 100%;
   }
+
+  html body {
+    overflow-y: auto !important;
+    margin-right: 0 !important;
+  }
+}
 
 @layer base {
   :root {
@@ -44,7 +42,6 @@ html body {
     --border: 240 5.9% 90%;
     --input: 240 5.9% 90%;
     --ring: 240 10% 3.9%;
-
     --radius: 0.5rem;
   }
 
@@ -72,20 +69,20 @@ html body {
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
-
+    
     --border: 240 3.7% 15.9%;
     --input: 240 3.7% 15.9%;
     --ring: 240 4.9% 83.9%;
   }
 }
 
-@layer base {
-  * {
-    @apply border-border;
-    @apply antialiased;
-  }
+html, body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow-y: auto !important;
+  margin-right: 0 !important;
 
-  body {
-    @apply bg-background text-foreground;
-  }
 }
