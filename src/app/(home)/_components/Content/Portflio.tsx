@@ -34,7 +34,7 @@ export function Portfolio({ img, title, content, link }: PortflioProps) {
         <h2 className="after:transition-translate relative w-fit max-w-full font-sans text-2xl font-bold text-orange-50 text-shadow-sm after:absolute after:-bottom-1 after:-left-6 after:h-1 after:w-[calc(100%+1.5rem)] after:origin-left after:scale-x-0 after:bg-orange-100 after:duration-700 after:group-focus-within:scale-105 after:group-hover:scale-x-100">
           {title}
         </h2>
-        {<Markdown>{content}</Markdown>}
+        <span className="text-foreground-text">{<Markdown>{content}</Markdown>}</span>
         {link?.length && (
           <Link href={link} aria-label="link">
             <Button
